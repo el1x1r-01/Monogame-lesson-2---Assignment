@@ -105,14 +105,6 @@ namespace Monogame_lesson_2___Assignment
                 }
             }
 
-            //for (i = 0; i <= 10; i++)
-            //{
-            //blackSquares = new Rectangle(blackX, blackY, 100, 100);
-
-            //_spriteBatch.Draw(squareTexture, blackSquares, Color.Black);
-
-            //blackY += 200;
-            //}
             _spriteBatch.End();
 
             base.Draw(gameTime);
