@@ -13,11 +13,6 @@ namespace Monogame_lesson_2___Assignment
 
         Texture2D squareTexture;
 
-        int blackX;
-        int blackY;
-        int whiteX;
-        int whiteY;
-
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -33,11 +28,6 @@ namespace Monogame_lesson_2___Assignment
             _graphics.PreferredBackBufferWidth = window.Width;
             _graphics.PreferredBackBufferHeight = window.Height;
             _graphics.ApplyChanges();
-
-            blackX = 0;
-            blackY = 0;
-            whiteX = 100;
-            whiteY = 0;
 
             base.Initialize();
         }
@@ -73,8 +63,6 @@ namespace Monogame_lesson_2___Assignment
             {
                 for (int x = 0; x <= 10; x++)
                 {
-                    blackY = 0;
-
                     if (y == 1 || y == 3 || y == 5 || y == 7)
                     {
                         blackSquares = new Rectangle(((x * 200) + 100), y * 100, 100, 100);
@@ -90,8 +78,6 @@ namespace Monogame_lesson_2___Assignment
 
                 for (int x = 0; x <= 10; x++)
                 {
-                    blackY = 0;
-
                     if (y == 2 || y == 4 || y == 6 || y == 8)
                     {
                         whiteSquares = new Rectangle(x * 200, ((y * 100) - 100), 100, 100);
