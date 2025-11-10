@@ -63,7 +63,7 @@ namespace Monogame_lesson_2___Assignment
             {
                 for (int x = 0; x <= 10; x++)
                 {
-                    if (y == 1 || y == 3 || y == 5 || y == 7)
+                    if (y % 2 != 0) //Checks for odd numbers
                     {
                         blackSquares = new Rectangle(((x * 200) + 100), y * 100, 100, 100);
                     }
